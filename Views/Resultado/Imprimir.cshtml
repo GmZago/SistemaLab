@@ -1,0 +1,48 @@
+﻿@model SistemaExame.Models.Resultado
+@{
+    Layout = null;
+}
+<h1>Exame</h1>
+
+<div>
+    <h4>Resultado</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ResultadoExame)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ResultadoExame)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DataRealizacao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DataRealizacao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ResultadoObservacao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ResultadoObservacao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Paciente)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Paciente.PacienteNome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Exame)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Exame.ExameNome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Profissional)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Profissional.ProfissionalNome)
+        </dd>
+    </dl>
+</div>

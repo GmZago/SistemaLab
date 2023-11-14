@@ -1,0 +1,90 @@
+﻿@model SistemaExame.Models.Paciente
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Paciente</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteNome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteNome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteSexo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteSexo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteCpf)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteCpf)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteTelefone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteTelefone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteNomeMae)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteNomeMae)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteTipoSangue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteTipoSangue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteIdade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteIdade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteAlergia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteAlergia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteEndereco)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteEndereco)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacientePeso)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacientePeso)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacienteAltura)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacienteAltura)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cidade.CidadeId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.PacienteId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
